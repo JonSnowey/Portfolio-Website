@@ -3,6 +3,10 @@ body {
   background-color: #F0F0F0;
 }
 
+.row{
+  margin-top:50px;
+}
+
 header {
   padding: 20px 0;
 }
@@ -28,6 +32,9 @@ a {
   margin: 0;
   text-decoration: none;
   color: black;
+}
+
+.headerfont{
   font-weight: bold;
   font-size: 18px;
 }
@@ -68,6 +75,7 @@ section .row img {
 
 .col-md-6 {
   margin: 0 0 30px;
+  
 }
 
 .btn.btn-primary {
