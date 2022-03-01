@@ -1,0 +1,597 @@
+<style>
+    body{
+      background-color: white;
+      width:100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+
+    }
+    .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #F4F4F4;
+  }
+
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: #FFFFFF;
+  }
+
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+
+
+
+
+    h2{
+      font-family: sans-serif;
+      color:868686;
+
+    }
+
+    h3 {
+      font-family: serif;
+      font-size: 25px;
+      color:868686;
+    }
+
+
+    #font{
+      color:868686;
+      margin: auto;
+      width: 100%;
+      max-width: 100%;
+      max-height:100%
+
+
+    }
+
+
+    img{
+      width:85%;
+      height:50%;
+    }
+
+
+
+    p{
+      font-family: Helvetica;
+      font-weight: bold;
+      color: 868686;
+      line-height:150%;
+
+
+    }
+
+    h1{
+      font-weight:bold;
+      font-size: 60px;
+      font-family: sans-serif;
+      color:868686;
+    }
+
+    .logo {
+
+      margin-top:-10px;
+      max-width:10%;
+      max-height:10%;
+      margin-left: 20px;
+
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+         color:#0A613D;
+         text-decoration:none;
+         cursor:pointer;
+    }
+
+
+    .content {
+        background-color: transparent;
+
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        box-orient: horizontal;
+        flex-direction: row;
+
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        justify-content: center;
+
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        align-items: center;
+
+    }
+
+    .cell {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+        text-align: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        box-sizing: content-box;
+
+    }
+    img {
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+        max-height:100%
+    }
+    #mydiv {
+    top:600;
+    left:550;
+    position: absolute;
+    z-index: 9;
+    background-color: #F6F6F6;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:228px;
+    height:300px;
+
+
+
+
+  }
+
+  #mydiv2 {
+    top:600;
+    left:250;
+    position: absolute;
+    z-index: 9;
+    background-color: #F6F6F6;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    width:228px;
+    height:300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  #boxtext{
+    margin-top:130px;
+    color:black;
+  }
+
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #343434;
+    color: #fff;
+    text-align:right;
+    width:210px;
+    height:20px
+  }
+
+
+  #mydivheader2 {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #343434;
+    color: #fff;
+    text-align:right;
+    width:210px;
+    height:20px;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right:180px;
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+    .button {
+      margin-left:180px;
+    }
+    .aboutme {
+      margin-right:100px;
+
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+     #title{
+
+    }
+
+  }
+
+  @media only screen and (max-width: 1450px) {
+     #textside{
+      font-size:12px;
+      float:left;
+      margin-left:-50px;
+
+    }
+    #blogimg1{
+      visibility:hidden;
+    }
+
+  }
+
+  #title
+
+  #textside{
+
+  }
+  #imgsided{
+
+  }
+
+  .btn{
+    background-color: transparent;
+    color: 868686;
+    border: 2px solid #868686;
+    transition-duration: 0.4s;
+
+    }
+
+  .btn:hover{
+    background-color: 868686;
+    color: white;
+  }
+  .abouttext{
+    margin-top: -210px;
+  }
+
+  .wrapper {
+    background:gray;
+    padding: 5rem;
+
+
+
+
+
+  }
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+
+
+  }
+
+
+  .group {
+    display: flex;
+    flex-wrap:flex;
+    gap: 1rem;
+  }
+
+
+  .more-content {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+
+
+
+
+  .wrapper {
+    margin-top:-20px;
+    background:#FFFDFD;
+    padding: 0rem;
+    overflow:hidden;
+
+
+
+  }
+
+  /*#content {
+    width: 500px;
+    height: 500px;
+
+  }
+
+  #leftblog, #rightblog {
+      display: inline-block;
+      width: 45%;
+      height: 100%;
+  }*/
+
+
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+
+
+  }
+
+
+
+  #blogimg1{
+    object-fit: cover;
+     width: 313px;
+     height: 292px;
+     opacity:1;
+    transition: 0.3s;
+  }
+
+  #blogimg1:hover{
+    opacity:0.7
+
+  }
+
+  hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 1em 0;
+      padding: 0;
+      margin-top:35px;
+
+  }
+  .aboutme{
+    text-align:left;
+    margin-left:100px;
+    line-height: 1.6;
+
+  }
+
+  #imgside{}
+
+
+  #imgtag{
+     position: absolute;
+     top: 15px;
+     left: 20px;
+     color:white;
+     background-color:#414040;
+     width:56px;
+     height:54px;
+     text-align:center;
+
+  }
+
+  #imgtag2{
+     position: absolute;
+     top: 325px;
+     left: 20px;
+     color:white;
+     background-color:#414040;
+     width:56px;
+     height:54px;
+     text-align:center;
+
+  }
+  #imgtag3{
+     position: absolute;
+     top: 625px;
+     left: 20px;
+     color:white;
+     background-color:#414040;
+     width:56px;
+     height:54px;
+     text-align:center;
+
+  }
+
+  #imgtag4{
+     position: absolute;
+     top: 925px;
+     left: 20px;
+     color:white;
+     background-color:#414040;
+     width:56px;
+     height:54px;
+     text-align:center;
+
+  }
+
+
+
+  #tagdate{
+    font-weight:bold;
+    color:white;
+    word-break: break-all;
+    word-spacing: 100vw;
+    margin-top:4px;
+  }
+
+  h1 span:hover{
+     background-color: #FFE68D;
+      transition: 0.3s;
+      cursor:default;
+  }
+
+
+    </style>
+
+
+    <html>
+
+
+
+    <div class="split left">
+    <!--<img class= "logo" img src="imgs/abfyp.png">-->
+      <div class="centered">
+          <h1>Hi I'm <span>Alex!</span></h1>
+          <h2 class = "aboutme">I'm a <span style="background-color:#C5D5FF;">UX/UI Designer</span> and a <span style="background-color:#BBFFD6;">Graphic Art </span>Enthusiast based in Ireland!</h2>
+
+
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <a href="1/loginareascroll.html"><button class="button btn">Portfolio</button></a>
+          </div>
+          </div>
+      <div class="split right">
+
+
+          <header class="wrapper">
+            <div id="imgsided" style="width: 100%;overflow:auto;margin-bottom:30px;background-color:F4F4F4;">
+         <div id="imgside" style="float:left; width: 50%">
+
+           <img id="blogimg1" src="https://studio.uxpincdn.com/studio/wp-content/uploads/2021/03/BlogHeader_14UIPrinciples_1200x600-1024x512.png.webp" alt="alternatetext">
+           <div id="imgtag">
+             <p id="tagdate">01 JAN</p>
+           </div>
+
+         </div>
+         <div id="textside" style="float:right;width:50%;margin-right:60px;margin-top:-280px;">
+           <h1 id="title">Figma</h1>
+           <p>A Beginner friendly tutorial in Figma covering the basics while touching on design conventions.</p>
+           <hr/>
+         </div>
+      </div>
+
+
+      <header class="wrapper">
+        <div style="width: 100%;overflow:auto;margin-bottom:30px;background-color:F4F4F4;">
+     <div style="float:left; width: 50%">
+
+       <img id="blogimg1" src="https://assets.website-files.com/5f4bb8e34bc82700bda2f385/614fa3f0219a0e05a15ee327_user%20interface%20design.jpg" alt="alternatetext">
+       <div id="imgtag2">
+         <p id="tagdate">01 JAN</p>
+       </div>
+
+
+     </div>
+     <div id="textside" style="float:right;width:50%;margin-bottom:30px;margin-right:60px;margin-top:-280px;">
+       <h1>Figma</h1>
+       <p>A Beginner friendly tutorial in Figma covering the basics while touching on design conventions.</p>
+         <hr/>
+       </div>
+    </div>
+
+
+      <header class="wrapper">
+        <div style="width: 100%;overflow:auto;margin-bottom:30px;background-color:F4F4F4;">
+      <div style="float:left; width: 50%">
+
+       <img id="blogimg1" src="https://web3canvas.com/wp-content/uploads/2018/12/mobile-app-ux-illustration-flat-isometric.jpg" alt="alternatetext">
+       <div id="imgtag3">
+         <p id="tagdate">01 JAN</p>
+       </div>
+
+      </div>
+      <div id="textside" style="float:right;width:50%;margin-right:60px;margin-top:-280px;">
+       <h1>Figma</h1>
+       <p>A Beginner friendly tutorial in Figma covering the basics while touching on design conventions.</p>
+       <hr/>
+      </div>
+      </div>
+
+      <header class="wrapper">
+        <div style="width: 100%;overflow:auto;margin-bottom:30px;background-color:F4F4F4;">
+      <div style="float:left; width: 50%">
+
+       <img id="blogimg1" src="https://miro.medium.com/max/1400/1*V-2UgJ47TiSn8smRaSQL1g.png" alt="alternatetext">
+       <div id="imgtag4">
+         <p id="tagdate">01 JAN</p>
+       </div>
+
+
+      </div>
+      <div id="textside" style="float:right;width:50%;margin-right:60px;margin-top:-280px;">
+       <h1>Figma</h1>
+       <p>A Beginner friendly tutorial in Figma covering the basics while touching on design conventions.</p>
+       <hr/>
+      </div>
+      </div>
+
+
+
+
+
+              </header>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </html>
